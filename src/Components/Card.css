@@ -3,18 +3,26 @@
 
 .card {
     max-width: 300px;
+    border-radius: 16px 16px 0 0;
     background-color: #edefee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin: 0 auto; */
 }
 
 .card img {
-    width: 300px;
     border-radius: 16px 16px 0 0;
+    width: 300px;
+    max-height: 30%;
+    object-fit: cover;
 }
 
 .card .dish-info {
     padding: 0 2rem 2rem;
     display: flex;
     flex-direction: column;
+    height: 70%;
 }
 
 .card .title {
@@ -46,4 +54,4 @@
 .specials-btn {
     margin-top: auto;
     cursor: pointer;
-  }
+}

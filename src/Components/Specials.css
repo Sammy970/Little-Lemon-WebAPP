@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+
+/* Upper text + button  */
+.text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 30rem;
+}
+
+/* Heading text  */
+.text h2 {
+    font-family: 'Markazi Text', serif;
+    font-size: 60px;
+    font-weight: 200;
+}
+
+/* Button CSS */
+button {
+    background-color: #f4ce14;
+    padding: 15px;
+    border-radius: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
