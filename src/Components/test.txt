@@ -1,0 +1,171 @@
+/* Card */
+
+position: absolute;
+width: 264.67px;
+height: 439px;
+left: 885.33px;
+top: 732px;
+
+
+
+/* Background_rectangle */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 42.2%;
+bottom: 0%;
+
+background: #EDEFEE;
+
+
+/* Image */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 57.8%;
+
+background: url(lemon dessert.jpg);
+border: 1px solid #000000;
+border-radius: 16px 16px 0px 0px;
+
+
+/* Name */
+
+position: absolute;
+left: 9.45%;
+right: 28.74%;
+top: 46.6%;
+bottom: 47.6%;
+
+font-family: 'Markazi Text';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 90%;
+/* or 22px */
+
+color: #000000;
+
+
+
+/* Description */
+
+position: absolute;
+left: 9.45%;
+right: 8.66%;
+top: 57.6%;
+bottom: 15%;
+
+font-family: 'Karla';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #495E57;
+
+
+
+/* Price */
+
+position: absolute;
+left: 73.62%;
+right: 3.94%;
+top: 46.8%;
+bottom: 49.4%;
+
+font-family: 'Karla';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+
+color: #EE9972;
+
+
+
+/* Group 4 */
+
+position: absolute;
+width: 147.96px;
+height: 28.1px;
+left: 25.01px;
+top: 390.71px;
+
+
+
+/* Order a delivery */
+
+position: absolute;
+left: 9.45%;
+right: 36.61%;
+top: 89%;
+bottom: 4.6%;
+
+/* Nav_Link */
+font-family: 'Karla';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+
+color: #333333;
+
+
+
+/* Group */
+
+position: absolute;
+left: 59.06%;
+right: 34.65%;
+top: 89.8%;
+bottom: 7.8%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 59.06%;
+right: 34.65%;
+top: 89.8%;
+bottom: 7.8%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 59.06%;
+right: 35.59%;
+top: 89.8%;
+bottom: 7.8%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 60%;
+right: 38.43%;
+top: 89.97%;
+bottom: 9.69%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 63.46%;
+right: 34.65%;
+top: 91.17%;
+bottom: 7.8%;
+
+background: #000000;

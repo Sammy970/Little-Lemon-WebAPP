@@ -1,8 +1,8 @@
 import React from 'react'
 import image from '../Assets/images/restaurantfood.jpg';
-import "./Main.css";
+import "./Hero.css";
 
-function Main() {
+function Hero() {
     return (
         <>
             <main>
@@ -21,4 +21,4 @@ function Main() {
     )
 }
 
-export default Main
+export default Hero
