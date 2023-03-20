@@ -1,17 +1,19 @@
 import './App.css';
-import Header from "./Components/Header";
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
+
 import Homepage from "./Components/Homepage"
-import Specials from "./Components/Specials"
+import BookingPage from './Components/BookingPage';
 
 function App() {
   return (
     <>
-      {/* Header + Navbar */}
-      <Header />
-      {/* Hero Page */}
-      <Homepage />
-      {/* Specials Page */}
-      <Specials />
+      <Routes>
+        <Route path='/' element={<Homepage />} />
+        <Route path='/booking' element={<BookingPage />} />
+      </Routes>
     </>
   );
 }
