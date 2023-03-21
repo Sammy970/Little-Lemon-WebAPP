@@ -9,7 +9,6 @@ function BookingForm(props) {
     const [guests, setGuests] = useState('');
     const [occasion, setOccasion] = useState('Birthday');
 
-
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(date);
