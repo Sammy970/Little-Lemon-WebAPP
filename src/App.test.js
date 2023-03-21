@@ -1,8 +1,16 @@
-import { render, screen } from "@testing-library/react";
-import BookingForm from './Components/BookingForm';
+import { fireEvent, render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import App from './App';
 
-test('Renders the BookingForm heading', () => {
-    render(<BookingForm />);
-    const headingElement = screen.getByText("Choose Date");
-    expect(headingElement).toBeInTheDocument();
+
+test('Renders the /', () => {
+  // render(<App />);
+  const headElement = screen.getByText("Little Lemon");
+  expect(headElement).toBeInTheDocument();
+
+  // const reserveButton = screen.getByText("Order Now");
+  // fireEvent.click(reserveButton);
+
+  // const headingElementNew = screen.getByText("Daily Specials");
+  // expect(headingElementNew).toBeInTheDocument();
 })

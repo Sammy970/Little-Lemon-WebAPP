@@ -53,6 +53,7 @@ main h2 {
     font-size: 40px;
     font-family: 'Markazi Text', serif;
     font-weight: 100;
+    margin-left: -22rem;
 }
 
 /* Subtext CSS */
@@ -75,4 +76,9 @@ main button {
     border-radius: 16px;
     font-size: 20px;
     font-weight: bold;
+}
+
+#link {
+    text-decoration: none;
+    color: black;
 }
