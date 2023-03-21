@@ -23,7 +23,7 @@ function BookingPage() {
     function submitForm(formData) {
         const isSubmitted = submitAPI(formData);
         if (isSubmitted) {
-            navigate("/tableconfirmed");
+            navigate("/confirmedTable");
         }
     }
 

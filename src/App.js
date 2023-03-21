@@ -6,6 +6,7 @@ import {
 
 import Homepage from "./Components/Homepage"
 import BookingPage from './Components/BookingPage';
+import ConfirmedBooking from './Components/ConfirmedBooking';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='/booking' element={<BookingPage />} />
+        <Route path='/confirmedTable' element={<ConfirmedBooking />} />
       </Routes>
     </>
   );
