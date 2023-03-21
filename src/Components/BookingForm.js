@@ -4,39 +4,38 @@ import './BookingForm.css'
 
 function BookingForm(props) {
 
-    const [date, setDate] = useState('');
-    const [time, setTime] = useState('17:00');
-    const [guests, setGuests] = useState('');
-    const [occasion, setOccasion] = useState('Birthday');
+    const [formData, setFormData] = useState({
+        date: '',
+        time: '00:00',
+        guests: '1',
+        occasion: 'Birthday'
+    })
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(date);
-        console.log(time);
-        console.log(guests);
-        console.log(occasion);
+
+    const handleFormChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevFormData) => ({
+            ...prevFormData,
+            [name]: value,
+        }))
     }
 
     const handleDateChange = (e) => {
-        e.preventDefault();
-        setDate(e.target.value);
+        const { name, value } = e.target;
+        setFormData((prevFormData) => ({
+            ...prevFormData,
+            [name]: value,
+        }))
+        props.dispatch({ type: 'UPDATE_TIMES', payload: value })
     }
 
-    const handleTimeChange = (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-        setTime(e.target.value);
+        // console.log(formData);
+        props.submitForm(formData);
     }
 
-    const handleGuestsChange = (e) => {
-        e.preventDefault();
-        setGuests(e.target.value);
-    }
-
-    const handleOccasionChange = (e) => {
-        e.preventDefault();
-        setOccasion(e.target.value);
-    }
-
+    const currentDate = new Date().toISOString().split("T")[0]
     const options = props.availableTimes.map(time => <option key={time}>{time}</option>)
 
     return (
@@ -44,18 +43,18 @@ function BookingForm(props) {
             <div className='forms' onSubmit={handleSubmit}>
                 <form >
                     <label className="title" htmlFor="res-date">Choose Date</label>
-                    <input type="date" id="res-date" onChange={handleDateChange} required />
+                    <input type="date" id="res-date" name="date" value={formData.date} onChange={handleDateChange} required min={currentDate} />
 
                     <label className="title" htmlFor="res-time">Choose time</label>
-                    <select id="res-time" onChange={handleTimeChange}>
+                    <select id="res-time" name="time" value={formData.time} onChange={handleFormChange}>
                         {options}
                     </select>
 
                     <label className="title" htmlFor="guests">Number of guests</label>
-                    <input type="number" placeholder="1" min="1" max="10" id="guests" onChange={handleGuestsChange} required/>
+                    <input type="number" placeholder="1" min="1" max="10" id="guests" name="guests" value={formData.guests} onChange={handleFormChange} required />
 
                     <label className="title" htmlFor="occasion">Occasion</label>
-                    <select id="occasion" onChange={handleOccasionChange}>
+                    <select id="occasion" name="occasion" value={formData.occasion} onChange={handleFormChange}>
                         <option>Birthday</option>
                         <option>Anniversary</option>
                     </select>
