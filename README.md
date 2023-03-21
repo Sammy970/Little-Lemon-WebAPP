@@ -2,6 +2,9 @@
 
 This project was developed as a Capstone Project for the Meta Front-End Web Developement Course
 
+Link to the app:
+https://little-lemon-sammy970.vercel.app
+
 ## What to check?
 
 1. Home button on Navigation
