@@ -2,7 +2,7 @@
 
 This project was developed as a Capstone Project for the Meta Front-End Web Developement Course
 
-## WHat to check?
+## What to check?
 
 1. Home button on Navigation
 2. Book a Table button
